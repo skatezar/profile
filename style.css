@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&display=swap');
+
+
+
+body {
+  font-family: 'Big Shoulders Display', cursive;
+  background-color: #f6f5f5;
+  color: #f6f5f5;
+}
+
+h1, h2, h3, p {
+  color: #276678;
+  letter-spacing: 3px;
+  line-height: 15px;
+}
+
+a {
+  color: #1687a7;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #d3e0ea;
+}
+
+.container{
+  width: 500px;
+  margin: 0 auto;
+}
+
+
+.image-circle{
+  border-radius: 50%;
+}
+
+.image-avatar{
+  width:100px;
+}
+
+.center-something{
+  display:flex; /*why do I need display:flex; in order to center */
+  margin: 0 auto;
+}
+
+.text-center{
+  text-align:center;
+}
+
+.card{
+  padding:50px;
+  margin:50px;
+  box-shadow: 0 0 10px #000000; /* what is 0 0 */
+}
+.button-styling{
+  background-color:#d3e0ea;
+  width: 170px;
+  height:40px;
+  border-radius:5px;
+  text-align: center;
+  padding:10px;
+}
+
+.list > li{
+  display: inline-block;
+  padding: 0px 20px
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+    background-color: red;
+  }
+
+  .button-styling{
+  background-color: orange;
+  width: 170px;
+  height:40px;
+  border-radius:5px;
+  text-align: center;
+  padding:10px;
+}
+}
+
+@media (max-width: 520px) {
+  /* For a screen < 540px, this CSS will be read */
+  .button-styling{
+  background-color: green;
+  width: 170px;
+  height:40px;
+  border-radius:5px;
+  text-align: center;
+  padding:10px;
+}
+}
